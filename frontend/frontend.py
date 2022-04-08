@@ -9,13 +9,13 @@ app_frontend = Blueprint('frontend', __name__,
 
 
 @app_frontend.route('/graph')
-@login_required
+# @login_required
 def graph():
     return render_template("graph.html")
 
 
 @app_frontend.route('/life')
-@login_required
+# @login_required
 def life():
     return render_template("life.html")
 
